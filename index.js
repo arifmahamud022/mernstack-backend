@@ -22,8 +22,8 @@ app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
 
-
-mongoose.connect(process.env.CONNECT_DB, {
+const Mongo_Url = "mongodb+srv://adminexpress:8sX5ruyGiscOTpya@expressjs.ruclfye.mongodb.net/PerfectBlog?retryWrites=true&w=majority"
+mongoose.connect(Mongo_Url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
