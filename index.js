@@ -16,7 +16,7 @@ const PORT = process.env.PORT|| 5000
 const salt = bcrypt.genSaltSync(10);
 const secret = 'asdfe45we45w345fhgfhfh675654876@@#$#$wegw345werjktjwertkj';
 dotenv.config();
-app.use(cors({credentials:true,origin:'http://localhost:3000'}));
+app.use(cors({credentials:true,origin:'https://its-blog.netlify.app'}));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
