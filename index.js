@@ -12,7 +12,7 @@ const cookieParser = require('cookie-parser');
 const multer = require('multer');
 const uploadMiddleware = multer({ dest: 'uploads/' });
 const fs = require('fs');
-const process.env.Port || 5000
+const PORT = process.env.PORT|| 5000
 const salt = bcrypt.genSaltSync(10);
 const secret = 'asdfe45we45w345fhgfhfh675654876@@#$#$wegw345werjktjwertkj';
 dotenv.config();
